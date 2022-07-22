@@ -12,9 +12,7 @@ import me.dio.soccernews.domain.News;
 
 public class FavoritesViewModel extends ViewModel {
 
-    public FavoritesViewModel() {
-
-    }
+    public FavoritesViewModel() {}
 
     public LiveData<List<News>> loadFavoriteNews() {
         return SoccerNewsRepository.getInstance().getLocalDb().newsDao().loadFavoriteNews();

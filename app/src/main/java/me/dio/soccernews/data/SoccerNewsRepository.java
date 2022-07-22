@@ -16,8 +16,8 @@ public class SoccerNewsRepository {
     //endregion
 
     //region Atributos: encapsulam o acesso a nossa API (Retrofit) e banco de dados local (Room).
-    private SoccerNewsApi remoteApi;
-    private SoccerNewsDb localDb;
+    private final SoccerNewsApi remoteApi;
+    private final SoccerNewsDb localDb;
 
     public SoccerNewsApi getRemoteApi() {
         return remoteApi;
