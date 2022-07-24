@@ -64,6 +64,4 @@ public class NewsFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
-
 }

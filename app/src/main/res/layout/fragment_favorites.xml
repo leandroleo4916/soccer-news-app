@@ -16,4 +16,21 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/news_item"/>
 
+    <TextView
+        android:id="@+id/txt_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:text="Suas notícias favoritas ficam aqui. Por enquanto você não favoritou!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rvNews"
+        app:layout_constraintEnd_toEndOf="@+id/rvNews"
+        app:layout_constraintStart_toStartOf="@+id/rvNews"
+        app:layout_constraintTop_toTopOf="@+id/rvNews" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

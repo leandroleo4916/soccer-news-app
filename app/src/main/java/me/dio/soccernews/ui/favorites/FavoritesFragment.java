@@ -30,6 +30,9 @@ public class FavoritesFragment extends Fragment {
 
     private void loadFavoriteNews() {
         favoritesViewModel.loadFavoriteNews().observe(getViewLifecycleOwner(), localNews -> {
+            if (localNews.size() == 0){
+                binding.txtFavorite.setVisibility(View.VISIBLE);
+            }
             binding.rvNews.setLayoutManager(new LinearLayoutManager(getContext()));
             binding.rvNews.setAdapter(new NewsAdapter(localNews, updatedNews -> {
                 favoritesViewModel.saveNews(updatedNews);
